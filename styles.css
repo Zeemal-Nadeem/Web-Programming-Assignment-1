@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+label {
+  display: block; 
+  margin-bottom: 8px; 
+  font-weight: bold;
+}
+
+/* .label-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-weight: bold;
+} */
+
+/* input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.name-inputs {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.name-inputs input {
+  margin-right: 100px; /* Adjust the margin as needed */
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.availability-inputs,
+.reference-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 20px; Adjust the gap as needed */
+}
+
+
+.availability-inputs label,
+.availability-inputs input,
+.availability-inputs select,
+.reference-inputs label,
+.reference-inputs input {
+  width: 100%; /* Make each item take 100% width within the flex container */
+}
+/* Add this to your existing styles.css file */
+
+.consent {
+  margin-bottom: 16px;
+}
+
+.consent-inputs {
+  display: flex;
+  flex-direction: column; /* Change flex-direction to column */
+  gap: 1px;
+}
+
+.checkbox-label {
+  display: flex;
+  /* align-items: center; */
+  margin-bottom: 1.5px;
+  white-space: nowrap; /* Add this property to prevent line breaks */
+  font-size: 14px;
+  bottom:0
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  bottom: 0; right: 0
+}
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+.checkbox-label input {
+  margin-right: 8px;
+  display: inline-flex;
+  width: 10px; /* Set a specific width for the checkboxes */
+  /* height: 100px; */
+  align-items: center;
+  vertical-align: middle;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

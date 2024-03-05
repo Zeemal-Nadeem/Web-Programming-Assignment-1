@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <form id="jobApplicationForm">
+    <div class="input-group">
+      <label for="name">Name:</label>
+      <div class="name-inputs">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+      </div>
+     </div>
+     <!-- <div class="input-group">
+      <label>Contact Information:</label>
+      <div class="name-inputs">
+        <label for="phonenumber">Phone Number:</label>
+        <input type="text" id="phonenumber" name="phonenumber" placeholder="Phone Number" required>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Email" required>
+      </div>
+     </div>
+     <div class="input-group">
+      <label>Address:</label>
+      <div class="name-inputs">
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" placeholder="Street" required>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="City" required>
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" placeholder="State" required>
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" name="zipcode" placeholder="Zip Code" required>
+      </div>
+     </div>
+     <div class="input-group">
+      <label>Resume and Cover Letter:</label>
+      <div class="name-inputs">
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+        <label for="coverLetter">Cover Letter:</label>
+        <textarea id="coverLetter" name="coverLetter" rows="4" required></textarea>
+      </div>
+     </div>
+     <div class="input-group">
+      <label>Education:</label>
+      <div class="name-inputs">
+        <label for="educationLevel">Highest Level of Education Attained:</label>
+        <select id="educationLevel" name="educationLevel" required>
+          <option value="">Select</option>
+          <option value="High School">High School</option>
+          <option value="Associate Degree">Associate Degree</option>
+          <option value="Bachelor's Degree">Bachelor's Degree</option>
+          <option value="Master's Degree">Master's Degree</option>
+          <option value="Doctorate">Doctorate</option>
+        </select>
+    
+        <label for="schoolName">Name of School/University:</label>
+        <input type="text" id="schoolName" name="schoolName" required>
+    
+        <label for="major">Major/Area of Study:</label>
+        <input type="text" id="major" name="major" required>
+    
+        <label for="graduationYear">Graduation Year:</label>
+        <input type="text" id="graduationYear" name="graduationYear" required>
+    
+        <label for="employmentHistory">Employment History:</label>
+        <textarea id="employmentHistory" name="employmentHistory" rows="4" required></textarea>
+      </div>
+     </div>
+
+     <div class="input-group">
+      <label>Previous Job Titles:</label>
+      <div class="name-inputs">
+        <label for="companyNames">Company Names:</label>
+        <input type="text" id="companyNames" name="companyNames" required>
+
+        <label for="employmentDates">Employment Dates:</label>
+        <input type="text" id="employmentDates" name="employmentDates" placeholder="MM/YYYY - MM/YYYY" required>
+
+        <label for="jobResponsibilities">Job Responsibilities:</label>
+        <textarea id="jobResponsibilities" name="jobResponsibilities" rows="4" required></textarea>
+      </div>
+     </div>
+     <div class="input-group">
+      <label>Skills:</label>
+      <div class="name-inputs">
+        <label for="skills">Skills:</label>
+        <input type="text" id="relevantSkills" name="relevantSkills" placeholder="e.g., Programming languages, software proficiency" required>
+
+        <label for="certifications">Certifications:</label>
+        <input type="text" id="certifications" name="certifications" required>
+      </div>
+     </div>
+
+     <div class="input-group">
+      <label for="availability">Availability:</label>
+      <div class="availability-inputs name-inputs">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required>
+
+        <label for="workSchedule">Preferred Work Schedule:</label>
+        <input type="text" id="workSchedule" name="workSchedule" required>
+
+        <label for="relocate">Willingness to Relocate:</label>
+        <select id="relocate" name="relocate" required>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="input-group">
+    <label for="references">References:</label>
+    <div class="reference-inputs name-inputs">
+      <label for="referenceName">Reference Name:</label>
+      <input type="text" id="referenceName" name="referenceName" required>
+
+      <label for="referenceContact">Reference Contact Information:</label>
+      <input type="text" id="referenceContact" name="referenceContact" required>
+
+      <label for="relationship">Relationship to Applicant:</label>
+      <input type="text" id="relationship" name="relationship" required>
+    </div>
+    </div>
+
+    <div class="input-group">
+      <label>References:</label>
+      <div class="name-inputs">
+    <label for="whyWorkHere">Why do you want to work for this company?</label>
+    <textarea id="whyWorkHere" name="whyWorkHere" rows="4" required></textarea>
+  </div>
+</div>
+
+<label for="consent">Consent and Agreement:</label>
+<br>
+<div class="consent-inputs">
+  <label class="checkbox-label">
+    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+    I agree to the Terms and Conditions
+  </label>
+  <label class="checkbox-label">
+    <input type="checkbox" id="privacyPolicyAck" name="privacyPolicyAck" required>
+    I acknowledge the Privacy Policy
+  </label>
+</div> -->
+
+ <button type="button" onclick="validateForm()">Submit Application</button>
+  </form>
+  <!-- <button id="viewTableBtn" onclick="viewApplications()"style="position: fixed; bottom: 0; right: 0">View Applications as Table</button>
+  <table id="applicationsTable" style="display: none;">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+         <th>Phone Number</th> 
+         <th>Resume</th>
+        <th>Cover Letter</th> 
+      </tr>
+    </thead>
+    <tbody id="applicationsTableBody"></tbody>
+  </table> -->
+  <script src="validation.js"></script>
+  <script src="table.js"></script>
+</body>
+</html>

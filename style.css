@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container .contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.container .contact-info i {
+    margin-right: 5px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.zee {
+    max-width: -100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+/* .container {
+    position: relative;
+} */
+
+.vertical-line {
+    position: fixed;
+    top: 150;
+    left: 73%;
+    height: 100vh;
+    width: 1px;
+    background-color: #333;
+    content: "";
+}
+/* ... existing styles ... */
+
+header .profile-img {
+    width: 150px; /* Set your preferred width */
+    height: 100px; /* Set your preferred height */
+    object-fit: cover; /* Ensure the image covers the specified dimensions */
+    /* border-radius: 50%; */
+}
+
+/* ... existing styles ... */
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: left; /* Change from center to left */
+    /* padding: 5px 0; */
+}
+.skills-label {
+    position: absolute;
+    top: 150px; /* Adjust the top position as needed */
+    left: calc(73% + 5px); /* Adjust the left position to be slightly to the right of the line */
+    color: #333; /* Set the color of the label */
+    /* font-weight: bold; */
+    font-size: 16px;
+}
+.skills-labell {
+    position: absolute;
+    top: 250px; /* Adjust the top position as needed */
+    left: calc(73% + 5px); /* Adjust the left position to be slightly to the right of the line */
+    color: #333; /* Set the color of the label */
+    /* font-weight: bold; */
+    font-size: 16px;
+}
+header h1 {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section.container img {
+    width: 125px; /* Set your preferred width */
+    height: 125px; /* Set your preferred height */
+    object-fit: cover; /* Ensure the image covers the specified dimensions */
+    /* border-radius: 50%; */
+    position: absolute;
+    top: 0px; /* Adjust the top position as needed */
+    left: 0px; /* Adjust the left position as needed */
+}
